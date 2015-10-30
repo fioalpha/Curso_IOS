@@ -11,7 +11,10 @@
 #import "ContatoDoa.h"
 #import "Contato.h"
 
+
 @interface ListaContatosViewController : UITableViewController
 @property ContatoDoa *dao;
 @property Contato *c;
+@property Contato *contatoSelecionado;
+
 @end

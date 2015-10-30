@@ -29,6 +29,11 @@
     return self;
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    self.contatoSelecionado = [self.dao buscaContatoDaPosicao:indexPath.row];
+    NSLog(@"Nome: %@", self.contatoSelecionado);
+}
+
 //Sobre escrevendo o metodo
 -(void) tableView:(UITableView *) tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
     if(editingStyle == UITableViewCellEditingStyleDelete){
