@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contato.h"
+#import "ContatoDoa.h"
 
 @interface ViewController : UIViewController
 
 
+@property IBOutlet UITextField *nome;
+@property IBOutlet UITextField *telefone;
+@property IBOutlet UITextField *email;
+@property IBOutlet UITextField *endereco;
+@property IBOutlet UITextField *site;
+@property (strong) ContatoDoa *dao;
+
+
+-(IBAction)pegaDadosDoFormulario;
 @end
 

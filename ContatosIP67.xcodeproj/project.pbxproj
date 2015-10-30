@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E4F2ED41BE170F5005AC088 /* ContatoDoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F2ED31BE170F5005AC088 /* ContatoDoa.m */; };
+		1E4F2ED71BE18814005AC088 /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F2ED61BE18814005AC088 /* ListaContatosViewController.m */; };
+		1EEDB1D81BE027B7006B1C69 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEDB1D71BE027B7006B1C69 /* Contato.m */; };
 		1EF26ABA1BDED7E000E3B5FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF26AB91BDED7E000E3B5FD /* main.m */; };
 		1EF26ABD1BDED7E000E3B5FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF26ABC1BDED7E000E3B5FD /* AppDelegate.m */; };
 		1EF26AC01BDED7E000E3B5FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF26ABF1BDED7E000E3B5FD /* ViewController.m */; };
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E4F2ED21BE170F5005AC088 /* ContatoDoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoDoa.h; sourceTree = "<group>"; };
+		1E4F2ED31BE170F5005AC088 /* ContatoDoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoDoa.m; sourceTree = "<group>"; };
+		1E4F2ED51BE18814005AC088 /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
+		1E4F2ED61BE18814005AC088 /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
+		1EEDB1D61BE027B7006B1C69 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
+		1EEDB1D71BE027B7006B1C69 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
 		1EF26AB51BDED7E000E3B5FD /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF26AB91BDED7E000E3B5FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1EF26ABB1BDED7E000E3B5FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,9 +113,15 @@
 			isa = PBXGroup;
 			children = (
 				1EF26ABB1BDED7E000E3B5FD /* AppDelegate.h */,
+				1E4F2ED51BE18814005AC088 /* ListaContatosViewController.h */,
+				1E4F2ED61BE18814005AC088 /* ListaContatosViewController.m */,
 				1EF26ABC1BDED7E000E3B5FD /* AppDelegate.m */,
 				1EF26ABE1BDED7E000E3B5FD /* ViewController.h */,
 				1EF26ABF1BDED7E000E3B5FD /* ViewController.m */,
+				1E4F2ED21BE170F5005AC088 /* ContatoDoa.h */,
+				1E4F2ED31BE170F5005AC088 /* ContatoDoa.m */,
+				1EEDB1D61BE027B7006B1C69 /* Contato.h */,
+				1EEDB1D71BE027B7006B1C69 /* Contato.m */,
 				1EF26AC11BDED7E000E3B5FD /* Main.storyboard */,
 				1EF26AC71BDED7E000E3B5FD /* Assets.xcassets */,
 				1EF26AC91BDED7E000E3B5FD /* LaunchScreen.storyboard */,
@@ -210,6 +225,7 @@
 				TargetAttributes = {
 					1EF26AB41BDED7E000E3B5FD = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = L966V5E8WV;
 					};
 					1EF26AD01BDED7E000E3B5FD = {
 						CreatedOnToolsVersion = 7.1;
@@ -273,6 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEDB1D81BE027B7006B1C69 /* Contato.m in Sources */,
+				1E4F2ED41BE170F5005AC088 /* ContatoDoa.m in Sources */,
+				1E4F2ED71BE18814005AC088 /* ListaContatosViewController.m in Sources */,
 				1EF26AC01BDED7E000E3B5FD /* ViewController.m in Sources */,
 				1EF26ABD1BDED7E000E3B5FD /* AppDelegate.m in Sources */,
 				1EF26AC61BDED7E000E3B5FD /* ContatosIP67.xcdatamodeld in Sources */,
@@ -415,10 +434,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ContatosIP67/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.ContatosIP67;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.wesley;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -426,10 +450,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ContatosIP67/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.ContatosIP67;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.wesley;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -500,6 +529,7 @@
 				1EF26AE71BDED7E100E3B5FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EF26AE81BDED7E100E3B5FD /* Build configuration list for PBXNativeTarget "ContatosIP67Tests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +538,7 @@
 				1EF26AEA1BDED7E100E3B5FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EF26AEB1BDED7E100E3B5FD /* Build configuration list for PBXNativeTarget "ContatosIP67UITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +547,7 @@
 				1EF26AED1BDED7E100E3B5FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
